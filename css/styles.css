@@ -97,7 +97,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -227,11 +227,10 @@ nav h1 a {
 
 .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: 87%;
-    position: fixed;
-    right: 0;
-    top: 80px;
-    width: 50%;
+    height: 65vh;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .inside #map {
@@ -283,7 +282,7 @@ nav h1 a {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
     padding: 140px 40px 30px;
-    width: 50%;
+    width: 100%;
 }
 
 #reviews-container {
