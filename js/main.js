@@ -2,7 +2,7 @@ let restaurants,
   neighborhoods,
   cuisines
 var map
-var markers = []
+var markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -140,12 +140,14 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
-  image.setAttribute('alt', 'Hi');
+  image.setAttribute('tabindex', '1');
+  image.setAttribute('alt', 'An image of ' + restaurant.name + " in " + restaurant.neighborhood);
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
+  name.setAttribute('tabindex', '2');
   li.append(name);
 
   const neighborhood = document.createElement('p');
@@ -154,14 +156,16 @@ createRestaurantHTML = (restaurant) => {
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
+  address.setAttribute('tabindex', '3');
   li.append(address);
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
+  more.setAttribute('data-message',"Read more about " + restaurant.name);
   more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more)
+  li.append(more);
 
-  return li
+  return li;
 }
 
 /**
