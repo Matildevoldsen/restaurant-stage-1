@@ -242,7 +242,7 @@ nav h1 a {
 .inside #footer {
     bottom: 0;
     position: absolute;
-    width: 50%;
+    width: 100%;
 }
 
 #restaurant-name {
@@ -322,7 +322,9 @@ nav h1 a {
     color: #666;
 }
 
-/* Rows & Columns */
+/*==========================
+Rows & Columns
+============================*/
 
 /* Row Class */
 .columns {
@@ -344,7 +346,7 @@ nav h1 a {
     width: 100%;
 }
 
-
+/* Allows the column to be on the same line on larger-screen-sizes */
 @media screen and (min-width: 760px) {
     .column {
         flex: 1;
