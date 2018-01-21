@@ -227,10 +227,8 @@ nav h1 a {
 
 .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: 65vh;
+    height: 85vh;
     width: 100%;
-    top: 0;
-    left: 0;
 }
 
 .inside #map {
@@ -283,6 +281,7 @@ nav h1 a {
     border-top: 1px solid #fff;
     padding: 140px 40px 30px;
     width: 100%;
+    margin: 0 auto;
 }
 
 #reviews-container {
@@ -344,11 +343,21 @@ Rows & Columns
     flex-direction: column;
     flex-basis: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Allows the column to be on the same line on larger-screen-sizes */
 @media screen and (min-width: 760px) {
     .column {
         flex: 1;
+    }
+
+    .inside #map-container {
+        height: 87%;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 50%;
     }
 }
