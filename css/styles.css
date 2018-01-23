@@ -335,14 +335,25 @@ Rows & Columns
     margin-bottom: 1rem;
 }
 
+.three-grid-columns {
+    width: 65% !important;
+    margin: 0 auto !important;
+    flex-wrap: wrap;
+}
+
 .column {
     display: flex;
     display: -webkit-flex; /* Safari Support */
     flex-direction: column;
     flex-basis: 100%;
     width: 100%;
+    margin: 0 10px;
     justify-content: center;
     align-items: flex-start;
+}
+
+.column:first-child, .column:last-child {
+    margin: 0 0;
 }
 
 /* Allows the column to be on the same line on larger-screen-sizes */
