@@ -43,8 +43,6 @@ self.addEventListener('activate', function (event) {
 });
 
 self.addEventListener('fetch', function (event) {
-    // TODO: respond to requests for the root page with
-    // the page skeleton from the cache
     let requestUrl = new URL(event.request.url);
 
     if (requestUrl.origin === location.origin) {
