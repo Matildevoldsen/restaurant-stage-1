@@ -13,4 +13,4 @@ This project is a part of my Nanodegree at Udacity.
 
 ## Installation
 
-Download the project via git clone or download button afterwards you should run **python -m SimpleHTTPServer 8000** for Python 2 and **python3 -m http.server 8000** for Python 3. The server will run locally at **http://localhost:8000**
+Download the project via git clone or download button afterwards you should run **python -m SimpleHTTPServer 8050** for Python 2 and **python3 -m http.server 8050** for Python 3. The server will run locally at **http://localhost:8050**
