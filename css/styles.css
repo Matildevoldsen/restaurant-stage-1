@@ -165,6 +165,7 @@ nav h1 a {
     background-color: #f3f3f3;
     list-style: outside none none;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -173,11 +174,11 @@ nav h1 a {
     border: 2px solid #ccc;
     font-family: Arial, sans-serif;
     margin: 10px 15px;
-    min-height: 380px;
-    max-width: 100%;
+    min-height: 480px;
+    height: 480px;
     text-align: left;
-    min-width: 210px;
-    width: auto;
+    width: 215px;
+    min-width: 215px;
 }
 
 #restaurants-list .restaurant-img {
