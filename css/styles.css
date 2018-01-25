@@ -185,6 +185,15 @@ nav h1 a {
     min-height: 476px;
 }
 
+#restaurants-list li:last-child, #restaurants-list li:first-child {
+    height: 476px !important;
+    min-height: 476px !important;
+    width: 330px !important;
+    max-width: 330px !important;
+    max-height: 476px !important;
+    min-width: 330px !important;
+}
+
 
 #restaurants-list .restaurant-img {
     background-color: #ccc;
@@ -350,8 +359,6 @@ Rows & Columns
     display: flex;
     display: -webkit-flex; /* Safari Support */
     flex-direction: column;
-    flex-basis: 100%;
-    width: 100%;
     margin: 0 10px;
     justify-content: center;
     align-items: flex-start;
@@ -373,10 +380,6 @@ Rows & Columns
         left: 0;
         top: 80px;
         width: 50%;
-    }
-
-    #restaurants-list li {
-        max-width: 60%;
     }
 
     #restaurant-container {
