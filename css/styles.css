@@ -244,14 +244,18 @@ nav h1 a {
 
 .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: 85vh;
+    height: 40vh;
     width: 100%;
+    min-height: 510px;
 }
 
 .inside #map {
     background-color: #ccc;
-    height: 100%;
+    height: 50vh;
+    position: absolute !important;
     width: 100%;
+    top: 151px;
+    left: 0;
 }
 
 .inside #footer {
@@ -368,6 +372,19 @@ Rows & Columns
     margin: 0 0;
 }
 
+@media screen and (max-width: 331px){ /*Small Screen sizes (iPhone 4)*/
+    #restaurants-list li {
+        min-width: 300px;
+        width: 300px;
+        max-width: 300px !important;
+        max-height: 476px;
+        height: 476px;
+        min-height: 476px;
+    }
+}
+
+
+
 /* Allows the column to be on the same line on larger-screen-sizes */
 @media screen and (min-width: 760px) {
     .column {
@@ -378,8 +395,15 @@ Rows & Columns
         height: 87%;
         position: fixed;
         left: 0;
-        top: 80px;
+        top: 122px;
         width: 50%;
+    }
+
+    .inside #map {
+        position: relative !important;
+        width: 100%;
+        height: 98%;
+        top: 0;
     }
 
     #restaurant-container {
