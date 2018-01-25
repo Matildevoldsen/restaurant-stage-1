@@ -174,12 +174,15 @@ nav h1 a {
     border: 2px solid #ccc;
     font-family: Arial, sans-serif;
     margin: 10px 15px;
-    min-height: 482px;
-    height: auto;
-    max-height: 500px;
-    text-align: left;
-    width: 275px;
-    min-width: 275px;
+    min-width: 330px;
+    display:  flex;
+    display:  -webkit-flex;
+    width: 330px;
+    max-width: 330px !important;
+    max-height: 476px;
+    flex-wrap: wrap;
+    height: 476px;
+    min-height: 476px;
 }
 
 
