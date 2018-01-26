@@ -406,7 +406,13 @@ Rows & Columns
         top: 0;
     }
 
+    .three-grid-columns {
+        width: 96% !important;
+    }
+
     #restaurant-container {
         padding: 140px 0;
     }
+
+
 }
